@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 
 public class ContactService {
     private List<Contact> contactList;
-    private static final String DATA_FILE_PATH = "data/contacts.csv";
+    private static final String DATA_FILE_PATH = "./data/contacts.csv";
 
     public ContactService() {
         this.contactList = new ArrayList<>();

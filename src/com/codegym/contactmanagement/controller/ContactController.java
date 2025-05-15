@@ -14,11 +14,6 @@ public class ContactController {
     public ContactController() {
         this.contactService = new ContactService();
         this.contactView = new ContactView();
-        try {
-            contactService.loadContactsFromFile();
-        } catch (IOException e) {
-            contactView.displayMessage("Lỗi: Không thể tải danh bạ từ file khi khởi động. Danh bạ có thể trống hoặc file lỗi.");
-        }
     }
 
     public void run() {
